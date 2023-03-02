@@ -1,24 +1,28 @@
-import './grid.scss';
-import {useState} from 'react';
+import { Route, Routes } from 'react-router-dom';
+import '../src/styles/Navbar.scss';
+import { Footer } from './component/Footer';
+import { Navbar } from './component/Navbar';
+import { Buyy } from './component/Pages/Buyy';
+import LandingPage from './component/Pages/LandingPage';
+import List from './component/Pages/List';
+import Login from './component/Pages/Login';
+import MyAgent from './component/Pages/MyAgent';
+import MyList from './component/Pages/MyList';
 
 const App = () => {
-  const [message, setMessage] = useState('');
-
-  const handleMessageChange = (event) => {
-    // 👇️ access textarea value
-    setMessage(event.target.value);
-    console.log(message);
-  };
 
   return (
     <div>
-      <label htmlFor="message">My Textarea</label>
-      <textarea
-        id="message"
-        name="message"
-        value={message}
-        onChange={handleMessageChange}
-      />
+      <Navbar />
+      <Routes>
+        <Route path="/" index element={<LandingPage />} />
+        <Route path="/buy" element={<Buyy />} />
+        <Route path="/list" element={<List />} />
+        <Route path="/mylist" element={<MyList />} />
+        <Route path="/myagent" element={<MyAgent />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+      <Footer />
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React from 'react'
+import "../../styles/Landing.scss";
 
 const LandingPage = () => {
     return (
