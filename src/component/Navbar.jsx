@@ -1,6 +1,8 @@
 import { useState } from "react"
 import { NavLink, Outlet, Link } from "react-router-dom"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "../styles/Navbar.scss";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 export const Navbar = () => {
     const [toggle, setToggle] = useState(false)
@@ -13,11 +15,7 @@ export const Navbar = () => {
             <div className="nav">
                 <Link to="/" className="logo">HomeLander</Link>
                 <div className="Hamburger" onClick={toggleMenu}>
-                    <svg viewBox="0 0 100 80" width="50" height="50">
-                        <rect width="50" height="7"></rect>
-                        <rect y="10" width="50" height="7"></rect>
-                        <rect y="20" width="50" height="7"></rect>
-                    </svg>
+                    <FontAwesomeIcon icon={toggle ? faTimes : faBars} size={"2x"} />
                 </div>
                 <nav className={toggle ? 'nav-items' : "null"}>
                     <ul>
