@@ -22,6 +22,10 @@ export const Navbar = () => {
     const closePopup=()=>{
         setPop(false)
     }
+
+     const[display, setDis] = useState(true);
+
+
  
     return (
         <>
@@ -59,11 +63,11 @@ export const Navbar = () => {
                         height={20} width={20} />
                 </span>
 
-                <div class="form-box login">
+                {display ? <div class="form-box login">
                     <h2>Log into your account</h2>
                     <div class="login-register">
                         <p>Or
-                            <span class="register-link">Create</span>account</p>
+                            <span class="register-link" onClick={()=>setDis(false)}>Create</span>account</p>
 
                     </div>
                     <form action="#">
@@ -96,12 +100,12 @@ export const Navbar = () => {
                             </span>
                         </div>
                     </form>
-                </div>
-                {/* <div class="form-box register">
+                </div>:  
+                 <div class="form-box register">
             <h2>Create an account</h2>
             <div class="register-login">
                     <p>Or
-                        <span class="login-link">Login</span>to your account</p>
+                        <span class="login-link" onClick={()=>setDis(true)}>Login</span>to your account</p>
 
                 </div>
             <form action="#">
@@ -147,7 +151,7 @@ height={20} width={20} />Log in with Facebook</button>
 </span>
 </div>
             </form>
-            </div> */}
+            </div> }
 
             </div>
         </div>:""}

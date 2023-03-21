@@ -11,7 +11,7 @@
     position: relative;
     margin:50px auto;
     width: 440px;
-    height: 440px;
+    height: 450px;
     background: white;
     border:none;
     backdrop-filter: blur(20px);
@@ -64,7 +64,7 @@ background:rgba(0,0,0,0.5) ;
     width: 100%;
     text-align: right;
 }
-span{
+span, a{
     text-decoration: none;
     padding: 3px 3px 3px 3px  ;
     color:rgb(13, 65, 13);
@@ -151,7 +151,7 @@ position: relative;
     margin-left: -8px;
 }
 .form-box.register{
-    margin-top: 15px;
+    margin-top: 25px;
 }
 .t_c input{
     margin-right:5px ;
