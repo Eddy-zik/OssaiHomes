@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "../styles/Navbar.scss";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import "../styles/Login.scss";
-import close from "./Pages/close.svg";
-import facebook from "./Pages/facebook.svg";
-import google from "./Pages/google.svg";
+import close from "./Pages/SVG/close.svg";
+import facebook from "./Pages/SVG/facebook.svg";
+import google from "./Pages/SVG/google.svg";
 
 export const Navbar = () => {
     const [toggle, setToggle] = useState(false)
@@ -133,8 +133,8 @@ export const Navbar = () => {
                 <div class="t_c">
                     <label for="box">
                         <input type="checkbox" required />agree to the
+                    <a href="/">terms & conditions</a><br/>
                     </label>
-                    <a href="#">terms & conditions</a><br/>
                 <button type="submit" className='btn_'>Sign up</button>
                 </div>
                 <p className='or'>or</p>

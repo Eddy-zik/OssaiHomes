@@ -5,7 +5,6 @@ import { Navbar } from './component/Navbar';
 import { Buyy } from './component/Pages/Buyy';
 import LandingPage from './component/Pages/LandingPage';
 import List from './component/Pages/List';
-import Login from './component/Pages/Login';
 import MyAgent from './component/Pages/MyAgent';
 import MyList from './component/Pages/MyList';
 
@@ -20,7 +19,6 @@ const App = () => {
         <Route path="/list" element={<List />} />
         <Route path="/mylist" element={<MyList />} />
         <Route path="/myagent" element={<MyAgent />} />
-        <Route path="/login" element={<Login />} />
       </Routes>
       <Footer />
     </div>

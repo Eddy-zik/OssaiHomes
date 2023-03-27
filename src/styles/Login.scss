@@ -61,6 +61,7 @@ background:rgba(0,0,0,0.5) ;
 }
 .remember_me , .t_c{
     font-size: 0.8em;
+    margin-top: 0px;
     width: 100%;
     text-align: right;
 }
@@ -154,5 +155,11 @@ position: relative;
     margin-top: 25px;
 }
 .t_c input{
-    margin-right:5px ;
+    position: absolute;
+    right: 12.7em;
+    bottom: -0.7em;
+}
+.t_c label{
+    margin-top:none;
+    position: relative;
 }
