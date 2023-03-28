@@ -52,7 +52,7 @@ function MyList () {
        </div>
 
        <section>
-        <div>
+        <div className='ASF'>
           <h2>Advanced search filter</h2>
           <input placeholder='Location'/>
           <input value='Category'/>
@@ -63,7 +63,14 @@ function MyList () {
           <input content='Category'/>
           <input content='Category'/>
         </div>
-        <div></div>
+        <div>
+            <input type='checkbox'/>
+            <input type='checkbox'/>
+            <input type='checkbox'/>
+            <input type='checkbox'/>
+            <input type='checkbox'/>
+            <input type='checkbox'/>
+        </div>
        </section>
       </div>
       </>
