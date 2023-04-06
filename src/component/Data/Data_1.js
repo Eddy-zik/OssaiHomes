@@ -13,7 +13,7 @@ export const PropertyData = [
         email:"",
         bedrooms:"",
         Bathroom:"",
-        Gtoilet:"",
+        toilet:"",
         
     },
     {

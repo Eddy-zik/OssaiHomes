@@ -1,6 +1,11 @@
 import React from 'react'
 import "../../styles/MyList.scss";
 import { PropertyData } from '../Data/Data_1';
+import call from "./SVG/telephone.svg"
+import bed from "./SVG/double-bed.svg"
+import bath from "./SVG/bath.svg"
+import toilet from "./SVG/water-closet.svg"
+import favourite from "./SVG/heart.svg"
 
 function MyList () {
     return (
@@ -36,12 +41,21 @@ function MyList () {
                                 <p className='text'>{box.desc}</p>
                                 <p className='loc'>{box.location}</p><br />
                                 <p><span className='amount'>{box.amount}</span>/month</p>
-                                <div className='num'>call</div>
+                                <div className='num'>
+                                    <img className='call_icon' src={call} alt="" width={30} height={30}/>
+                                    call</div>
                                 <div className='foot'>
-                                    <div>guest toilet</div>
-                                    <div>Bedrooms</div>
-                                    <div>bathrooms</div>
+                                    <div>
+                                    <img className='call_icon' src={toilet} alt="" width={30} height={30}/>
+                                    guest toilet</div>
+                                    <div>
+                                    <img className='call_icon' src={bed} alt="" width={30} height={30}/>
+                                    Bedrooms</div>
+                                    <div>
+                                    <img className='call_icon' src={bath} alt="" width={30} height={30}/>
+                                    bathrooms</div>
                                     {/* favourite icon */}
+                                    <img className='call_icon' src={favourite} alt="" width={30} height={30}/>
                                 </div>
                             </div>
             </div>
