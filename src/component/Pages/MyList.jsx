@@ -17,7 +17,13 @@ function MyList () {
         <input typeof='search' placeholder='Location' className='search_bar'/>
         <ul>
             <li className='search_bar-s'>Price <i class="fa fa-angle-down" aria-hidden="true"></i>
-            
+            <div className='dropdown_bed'>
+                <ul>
+                    <input/> <hr/> <input/>
+                    <li>50,000</li>
+                    <li>200,000</li>
+                </ul>
+             </div>
             </li>
             <li className='search_bar-b'>Category <i class="fa fa-angle-down" aria-hidden="true"></i>
             <div className='dropdown_bed'>
