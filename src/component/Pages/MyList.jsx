@@ -16,10 +16,36 @@ function MyList () {
             
         <input typeof='search' placeholder='Location' className='search_bar'/>
         <ul>
-            <li className='search_bar-s'>Price <i class="fa fa-angle-down" aria-hidden="true"></i></li>
-            <li className='search_bar-b'>Category <i class="fa fa-angle-down" aria-hidden="true"></i></li>
-            <li className='search_bar-s'>Type <i class="fa fa-angle-down" aria-hidden="true"></i></li>
-            <li className='search_bar-b'>Bedrooms <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+            <li className='search_bar-s'>Price <i class="fa fa-angle-down" aria-hidden="true"></i>
+            
+            </li>
+            <li className='search_bar-b'>Category <i class="fa fa-angle-down" aria-hidden="true"></i>
+            <div className='dropdown_bed'>
+                <ul>
+                    <li>Sale</li>
+                    <li>Rent</li>
+                </ul>
+             </div>
+            </li>
+            <li className='search_bar-s'>Type <i class="fa fa-angle-down" aria-hidden="true"></i>
+            <div className='dropdown_bed'>
+                <ul>
+                    <li>Flats / apartment</li>
+                    <li>Houses</li>
+                </ul>
+             </div>
+            </li>
+            <li className='search_bar-b'>Bedrooms <i class="fa fa-angle-down" aria-hidden="true"></i>
+             <div className='dropdown_bed'>
+                <ul>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>more than 5</li>
+                </ul>
+             </div>
+            </li>
         </ul>
       </nav>
       <div className='main_search'>
